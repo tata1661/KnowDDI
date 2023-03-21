@@ -1,4 +1,4 @@
-# Adaptive usage of large biomedical knowledge graph enables accurate and interpretable drug-drug interaction prediction
+# Implementation of KnowDDI
 
 
 # Contents
