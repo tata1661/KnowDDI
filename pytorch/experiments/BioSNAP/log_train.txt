@@ -1,0 +1,70 @@
+============ Initialized logger ============
+BKG_file_name: BKG_file	 MLP_dropout: 0.2	 MLP_hidden_dim: 24	 MLP_num_layers: 3	 add_traspose_rels: False	 batch_size: 256	 dataset: BioSNAP	 disable_cuda: False	 early_stop_epoch: 10	 edge_softmax: 1	 emb_dim: 32	 enclosing_subgraph: True	 eval_every_iter: 452	 exp_dir: utils/../experiments/BioSNAP	 experiment_name: BioSNAP	 func_num: 1	 gcn_aggregator_type: mean	 gcn_dropout: 0.2	 gpu: 2	 gsl_has_edge_emb: 1	 gsl_rel_emb_dim: 24	 hop: 2	 kge_model: TransE	 lamda: 0.5	 load_model: False	 lr: 0.005	 lr_decay_rate: 0.93	 main_dir: utils/..	 max_links: 250000	 max_nodes_per_hop: 200	 num_dig_layers: 3	 num_epochs: 50	 num_gcn_layers: 2	 num_infer_layers: 1	 num_workers: 32	 optimizer: Adam	 save_every_epoch: 10	 seed: 1111	 sparsify: 1	 test_file: test	 threshold: 0.1	 train_file: train	 use_pre_embeddings: False	 valid_file: valid	 weight_decay_rate: 1e-05
+============================================
+Device: cuda:2
+ # Relations : 200, # Augmented relations : 224
+No existing model found. Initializing new model..
+Total number of parameters: 1216873
+start training...
+Epoch 1 with loss: 667.4310681152343, training auc: 0, training auc_pr: 0, best validation AUC: 0 in 313.04468178749084
+Eval Performance:{'auc': 0.9397582693959068, 'auc_pr': 0.9308626677131209, 'f1': 0.86680692865178}in 50.928382396698s
+Test Performance:{'auc': 0.9386490615240178, 'auc_pr': 0.9255121457517737, 'f1': 0.8712108363410721}in 93.36261820793152s
+Better models found w.r.t accuracy. Saved it!
+Epoch 2 with loss: 517.5317877875434, training auc: 0, training auc_pr: 0, best validation AUC: 0.9397582693959068 in 490.66571950912476
+Epoch 3 with loss: 469.705706515842, training auc: 0, training auc_pr: 0, best validation AUC: 0.9397582693959068 in 325.4082758426666
+Eval Performance:{'auc': 0.9479544427353034, 'auc_pr': 0.9377993536727512, 'f1': 0.8801851438163594}in 51.59897017478943s
+Test Performance:{'auc': 0.9456046087564303, 'auc_pr': 0.9310869993022124, 'f1': 0.8822166905603466}in 94.18634676933289s
+Better models found w.r.t accuracy. Saved it!
+Epoch 4 with loss: 439.3436412217882, training auc: 0, training auc_pr: 0, best validation AUC: 0.9479544427353034 in 478.35313177108765
+Epoch 5 with loss: 414.57763997395836, training auc: 0, training auc_pr: 0, best validation AUC: 0.9479544427353034 in 359.28978061676025
+Eval Performance:{'auc': 0.9515760724228983, 'auc_pr': 0.9421975363389146, 'f1': 0.885363555934328}in 54.31081032752991s
+Test Performance:{'auc': 0.9497347300196628, 'auc_pr': 0.9367908915115964, 'f1': 0.8876861670919854}in 114.50552082061768s
+Better models found w.r.t accuracy. Saved it!
+Epoch 6 with loss: 395.02809020996096, training auc: 0, training auc_pr: 0, best validation AUC: 0.9515760724228983 in 499.42908668518066
+Epoch 7 with loss: 375.0266331651476, training auc: 0, training auc_pr: 0, best validation AUC: 0.9515760724228983 in 326.9345452785492
+Eval Performance:{'auc': 0.9534941187842639, 'auc_pr': 0.9443789601448569, 'f1': 0.8889000079160831}in 57.74480199813843s
+Test Performance:{'auc': 0.9519057465928401, 'auc_pr': 0.9390412859364637, 'f1': 0.892389381332427}in 94.46311497688293s
+Better models found w.r.t accuracy. Saved it!
+Epoch 8 with loss: 359.87012586805554, training auc: 0, training auc_pr: 0, best validation AUC: 0.9534941187842639 in 494.6151223182678
+Epoch 9 with loss: 344.0639053683811, training auc: 0, training auc_pr: 0, best validation AUC: 0.9534941187842639 in 314.33241176605225
+Eval Performance:{'auc': 0.9542693051933526, 'auc_pr': 0.94441878582905, 'f1': 0.8910472616686215}in 51.50185751914978s
+Test Performance:{'auc': 0.9524329466524221, 'auc_pr': 0.9394609487905666, 'f1': 0.8932617895830078}in 93.44906067848206s
+Better models found w.r.t accuracy. Saved it!
+Epoch 10 with loss: 331.7491374376085, training auc: 0, training auc_pr: 0, best validation AUC: 0.9542693051933526 in 502.2638292312622
+Epoch 11 with loss: 321.98862196180556, training auc: 0, training auc_pr: 0, best validation AUC: 0.9542693051933526 in 315.08400321006775
+Eval Performance:{'auc': 0.9540844168613123, 'auc_pr': 0.9444665941510738, 'f1': 0.8910785266483837}in 50.065842628479004s
+Test Performance:{'auc': 0.9535532016486243, 'auc_pr': 0.940761585814547, 'f1': 0.8950896688080064}in 94.15726685523987s
+Epoch 12 with loss: 313.98653733995224, training auc: 0, training auc_pr: 0, best validation AUC: 0.9542693051933526 in 469.7717990875244
+Epoch 13 with loss: 305.7554664442274, training auc: 0, training auc_pr: 0, best validation AUC: 0.9542693051933526 in 340.84419417381287
+Eval Performance:{'auc': 0.9534493881076352, 'auc_pr': 0.9434018427538574, 'f1': 0.8907656443537607}in 48.67583441734314s
+Test Performance:{'auc': 0.9525412614063629, 'auc_pr': 0.9395134870779265, 'f1': 0.8937211206587028}in 98.09867525100708s
+Epoch 14 with loss: 298.0529021538629, training auc: 0, training auc_pr: 0, best validation AUC: 0.9542693051933526 in 474.520215511322
+Epoch 15 with loss: 291.3757708062066, training auc: 0, training auc_pr: 0, best validation AUC: 0.9542693051933526 in 337.40175771713257
+Eval Performance:{'auc': 0.9538926176247299, 'auc_pr': 0.943617618283636, 'f1': 0.8915882407455327}in 71.29587173461914s
+Test Performance:{'auc': 0.9532358266665071, 'auc_pr': 0.9403536425066052, 'f1': 0.8947215433517262}in 104.80215334892273s
+Epoch 16 with loss: 284.04739345974394, training auc: 0, training auc_pr: 0, best validation AUC: 0.9542693051933526 in 486.51802229881287
+Epoch 17 with loss: 280.31939507378473, training auc: 0, training auc_pr: 0, best validation AUC: 0.9542693051933526 in 312.4455363750458
+Eval Performance:{'auc': 0.9529075603841284, 'auc_pr': 0.9418878408168407, 'f1': 0.8910145928234943}in 51.884499073028564s
+Test Performance:{'auc': 0.9525846038190116, 'auc_pr': 0.9395687246660073, 'f1': 0.8936000783025807}in 93.68445372581482s
+Epoch 18 with loss: 273.81493977864585, training auc: 0, training auc_pr: 0, best validation AUC: 0.9542693051933526 in 499.92797112464905
+Epoch 19 with loss: 269.90246249728733, training auc: 0, training auc_pr: 0, best validation AUC: 0.9542693051933526 in 312.803261756897
+Eval Performance:{'auc': 0.9532902692862237, 'auc_pr': 0.9426294810965138, 'f1': 0.8909984999643095}in 51.357332944869995s
+Test Performance:{'auc': 0.9522344789037259, 'auc_pr': 0.9387274233318114, 'f1': 0.8934401715828796}in 93.96495580673218s
+Epoch 20 with loss: 266.9356799994575, training auc: 0, training auc_pr: 0, best validation AUC: 0.9542693051933526 in 497.5837333202362
+Epoch 21 with loss: 261.18871520996095, training auc: 0, training auc_pr: 0, best validation AUC: 0.9542693051933526 in 337.9402394294739
+Eval Performance:{'auc': 0.9530446277203305, 'auc_pr': 0.9422009749142245, 'f1': 0.8909018461550798}in 49.54967260360718s
+Test Performance:{'auc': 0.9521073120040073, 'auc_pr': 0.9383738120338212, 'f1': 0.8927212094699247}in 84.24657917022705s
+Epoch 22 with loss: 257.3278751627604, training auc: 0, training auc_pr: 0, best validation AUC: 0.9542693051933526 in 446.3768320083618
+Epoch 23 with loss: 252.8742491997613, training auc: 0, training auc_pr: 0, best validation AUC: 0.9542693051933526 in 361.6127471923828
+Eval Performance:{'auc': 0.9533857761645079, 'auc_pr': 0.942329534932003, 'f1': 0.8911637355359869}in 55.75655198097229s
+Test Performance:{'auc': 0.9523799573438276, 'auc_pr': 0.938545257237059, 'f1': 0.8936547433572468}in 108.75613594055176s
+Epoch 24 with loss: 251.07244500054253, training auc: 0, training auc_pr: 0, best validation AUC: 0.9542693051933526 in 489.8391375541687
+Epoch 25 with loss: 248.29810994466146, training auc: 0, training auc_pr: 0, best validation AUC: 0.9542693051933526 in 307.1633098125458
+Eval Performance:{'auc': 0.952776805612759, 'auc_pr': 0.9415340052541044, 'f1': 0.8915433482449892}in 52.21003246307373s
+Test Performance:{'auc': 0.9513522875735689, 'auc_pr': 0.9368366189342205, 'f1': 0.8922378532575087}in 93.06896758079529s
+Epoch 26 with loss: 247.1596426730686, training auc: 0, training auc_pr: 0, best validation AUC: 0.9542693051933526 in 483.05812978744507
+Epoch 27 with loss: 243.21676900227865, training auc: 0, training auc_pr: 0, best validation AUC: 0.9542693051933526 in 310.9014277458191
+Eval Performance:{'auc': 0.9526225357602455, 'auc_pr': 0.9411188733346546, 'f1': 0.8908892971607766}in 51.33885598182678s
+Test Performance:{'auc': 0.9516058708070027, 'auc_pr': 0.9369358065389534, 'f1': 0.8934231939388502}in 93.61168336868286s
+Epoch 28 with loss: 242.02858744303384, training auc: 0, training auc_pr: 0, best validation AUC: 0.9542693051933526 in 508.3053369522095
+Validation performance didn't improve for 10 epochs. Training stops.
